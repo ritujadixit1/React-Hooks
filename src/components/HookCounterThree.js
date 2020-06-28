@@ -1,5 +1,5 @@
 // useState with object
-// useState does not automatically update and merge the state. 
+// useState does not automatically updates and merges the state. 
 // This is a key difference with the setState. setState merges the state automatically
 
 import React, {useState} from 'react'
@@ -21,7 +21,7 @@ function HookCounterThree() {
                     onChange={e => setName({ ...name, lastName: e.target.value })}
                 />
                 <h2>Your first name is - {name.firstName}</h2>
-                <h2>Your first name is - {name.lastName}</h2>
+                <h2>Your last name is - {name.lastName}</h2>
             </form>
         </div>
     )
