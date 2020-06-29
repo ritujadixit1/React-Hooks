@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
-import DataFetching from './components/DataFetching';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 
 function App() {
   return (
     <div className="App">
-      <DataFetching />
+      <UserProvider value="Vishwas">
+        <ComponentC />
+      </UserProvider>
+      
     </div>
   );
 }
